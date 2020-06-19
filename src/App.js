@@ -1,26 +1,44 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './profile/Profile.js';
+import PropTypes from 'prop-types';
+import Profile from './profile/Profile.js';
 
-function App() {
+const ProfileInformations = ({ FullName: 'Yosr Safta', Bio: 'microsoft lover', Profession: 'student' })
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" style={{border:'solid 2px green',maxwidth:'100vw',color:blur,justifyContent:ClientRect}}>
+<Profile FullName={ProfileInformations.FullName}  Bio={ProfileInformations. Bio}  Profession={ProfileInformations.Profession}/>
+    </div >
   );
 }
 
+
+
+
+
+ReactComponent.propTypes={
+Profession,FullName,Bio:PropTypes.string
+
+
+};
+
+
+
+function handleName(props){
+  return(
+  
+  alert({FullName})
+  
+  );
+  
+  }
+  export default handleName;
+}
 export default App;
+
+
+
+
