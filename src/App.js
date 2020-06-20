@@ -16,7 +16,9 @@ function App(props) {
   }
   return (
     <div className="App" style={{border:'solid 2px green',maxwidth:'100vw',color:blur,justifyContent:ClientRect}}>
-<Profile FullName={ProfileInformations.FullName}  Bio={ProfileInformations. Bio}  Profession={ProfileInformations.Profession}/>
+<Profile FullName={ProfileInformations.FullName}  Bio={ProfileInformations. Bio}  Profession={ProfileInformations.Profession}
+    
+    handleName={handleName}/>
     </div >
   );
 }
