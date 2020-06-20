@@ -18,15 +18,10 @@ const Profile = (props) => {
     )
 
 }
+Profile.propTypes={
+    Profession,FullName,Bio:PropTypes.string
+    };
 
 
-const Pic=(props)=>{
-
-return(
-
-<div>{props.Pic}</div>
-)
-
-}
 
 export default Profile;
